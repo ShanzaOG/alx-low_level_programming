@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int long long int = a
+	int long long = a
 	printf("Size of a char: %d byte(s)\n", (unsigned long)sizeof(char));
 	printf("Size of an int: %d\ byte(s)\n", (unsigned long)sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", (unsigned long)sizeof(long int));
