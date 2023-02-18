@@ -8,14 +8,12 @@
  */
 int main(void)
 {
-	char elf, a = '0';
+	int a = '0';
+	char elf;
 
-	while (a < '10')
-	{
+	for (a = '0'; a <= '9'; a++)
 		putchar(a);
-		a++;
-	}
-	for (elf = 'a'; elf <= 'f'; elf++)
+	for (elf = 'a'; elf <= 'z'; elf++)
 		putchar(elf);
 	putchar('\n');
 
