@@ -7,30 +7,21 @@
 
 int main(void)
 {
-	int n = 50;
-
-	fibonacci(n);
-	for (i = 0; i <= 50; i++)
-	{
-		a = fibonacci(i);
-		printf("%d
-
-	return 0;
-}
-
-int fibonacci(int n)
-{
 	int i;
-	int a = 1;
-	int b = 2;
-		
+	long int fibo[50], sum = 2;
 
-	if (n < 1)
-		i = 0;
-	else if ( n == 1)
-		i = 1;
-	else
-		i = fibonacci(n-1) + fibonacci(n-2);
-	return (i);
+	fibo[0] = 1;
+	fibo[1] = 2;
+
+	for (i = 2; i < 50; i++)
+	{
+		fibo[i] = fibo[i - 1] + fibo[i - 2];
+		if ((fibo[i] % 2) == 0 && fibo[i] < 4000000)
+			sum += fibo[i];
+	}
+	printf("%ld\n", sum);
+
+	return (0);
 }
+
 
