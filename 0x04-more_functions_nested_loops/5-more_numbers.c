@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * more-numbers - prints 10 times
+ * more_numbers - prints 10 times
  * Description: uses _putchar
  * Return: nothing
  */
