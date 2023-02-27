@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _puts - check description
- * @str: pointer to char
+ * rev_string - check description
+ * @s: pointer to char
  * Description: prints a string followed by a new line
  * Return: Nothing
  */
