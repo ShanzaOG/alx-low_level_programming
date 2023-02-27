@@ -2,7 +2,6 @@
 
 /**
  * _strlen - check description
- * rev_string - check description
  * @s: pointer to char
  * Description: prints a string followed by a new line
  * Return: Nothing
@@ -17,6 +16,12 @@ int _strlen(char *s)
 	}
 	return (i);
 }
+/**
+ * rev_string - check description
+ * @s: pointer to char
+ * Description: prints a string followed by a new line
+ * Return: Nothing
+ */
 void rev_string(char *s)
 {
 	char p;
