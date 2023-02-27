@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpy - check description
+ * _strcpy - check description
  * @dest: pointer to a char
  * @src: pointer to a char
  * Description: copies string to a buffer
