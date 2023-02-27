@@ -2,7 +2,7 @@
 
 /**
  * _puts - check description
- * @str: pointer to char
+ * @s: pointer to char
  * Description: prints a string followed by a new line
  * Return: Nothing
  */
