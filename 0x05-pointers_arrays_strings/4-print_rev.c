@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * prin_rev - check description
+ * print_rev - check description
  * @s: pointer to char
  * Description: prints a string followed by a new line
  * Return: Nothing
