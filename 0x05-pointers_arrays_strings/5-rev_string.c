@@ -2,9 +2,6 @@
 
 /**
  * _strlen - check description
- * @s: pointer to char
- * Description: calculates length of a string
- * Return: integer
  * rev_string - check description
  * @s: pointer to char
  * Description: prints a string followed by a new line
@@ -13,7 +10,7 @@
 int _strlen(char *s)
 {
 	int i = 0;
-	
+
 	while (s[i] != '\0')
 	{
 		i++;
