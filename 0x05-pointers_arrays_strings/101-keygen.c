@@ -14,16 +14,15 @@ void PasswordGen(int n)
 {
 	int i = 0;
 	int random = 0;
-
-	srand((unsigned int)(time(NULL)));
-
-	char numbers[] = "0123456789";//array of numbers
+	char pswd[n];
+	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 	char symbols[] = "!@#$^&*?";
 
-	char pswd[n];//Stores random pswd
-	random = rand() % 4;//to select randomizer inside the loop
+	srand((unsigned int)(time(NULL)));
+
+	random = rand() % 4;
 
 	for (i = 0; i < n; i++)
 	{
