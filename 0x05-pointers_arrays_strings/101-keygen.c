@@ -54,3 +54,10 @@ void PasswordGen(int n)
 		}
 	}
 }
+
+int main(void)
+{
+	PasswordGen(10);
+
+	return (0);
+}
