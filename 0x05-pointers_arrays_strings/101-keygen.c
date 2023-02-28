@@ -6,7 +6,7 @@
 /**
  * PasswordGen - check description
  * @n: integer n
- * Description: generates random password
+ * Description: generates random pswd
  * Return: Nothing
  */
 
@@ -15,10 +15,6 @@ void PasswordGen(int n)
 	int i = 0;
 	int random = 0;
 
-	// Seed the random-number generator
-	// with current time so that numbers will
-	// be different everytime
-
 	srand((unsigned int)(time(NULL)));
 
 	char numbers[] = "0123456789";//array of numbers
@@ -26,34 +22,34 @@ void PasswordGen(int n)
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 	char symbols[] = "!@#$^&*?";
 
-	char password[n];//Stores random password
+	char pswd[n];//Stores random pswd
 	random = rand() % 4;//to select randomizer inside the loop
 
 	for (i = 0; i < n; i++)
 	{
 		if (random == 1)
 		{
-			password[i] = symbols[rand() % 10];
+			pswd[i] = symbols[rand() % 10];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pswd[i]);
 		}
 		else if (random == 2)
 		{
-			password[i] = symbols[rand() % 8];
+			pswd[i] = numbers[rand() % 8];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pswd[i]);
 		}
 		else if (random == 3)
 		{
-			password[i] = symbols[rand() % 26];
+			pswd[i] = LETTER[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pswd[i]);
 		}
 		else
 		{
-			password[i] = letter[rand() % 26];
+			pswd[i] = letter[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", pswd[i]);
 		}
 	}
 }
