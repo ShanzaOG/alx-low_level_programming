@@ -4,27 +4,32 @@
  * _atoi - check description
  * @s: pointer to char
  * Description: converts string to integer
- * Returns: int value and zero if null
+ * Return: int value and zero if null
  */
 
 int _atoi(char *s)
 {
-	int result = 0;
+	unsigned int result = 0;
 	int sign = 1;
-	int i = 0;
+	char null_flag = 0;
 
-	if (s[0] == '-')
+	while (*S)
 	{
-		sign = -1;
-		i++;
-	}
+		if (*s == '-')
+		{
+			sign = -1;
+		}
 
-	for (; s[i] != '\0'; i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			result = result * 10 + (s[i] - '0');
-		else
+		if (*s >= '0' && *S <= '9')
+		{
+			null_flag = 1;
+			result = result * 10 + *s - '0';
+		}
+		else if (null_flag)
 			break;
+		s++;
 	}
-	return (sign * result);
+	if (sign < 0)
+		result = (-result);
+	return (result);
 }
