@@ -57,7 +57,7 @@ void PasswordGen(int n)
 
 int main(void)
 {
-	PasswordGen(10);
+	PasswordGen(15);
 
 	return (0);
 }
