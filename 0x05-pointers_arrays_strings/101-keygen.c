@@ -13,7 +13,7 @@
 void PasswordGen(int n)
 {
 	int i = 0;
-	const int a = n
+	const int a = n;
 	int random = 0;
 	char pswd[a];
 	char numbers[] = "0123456789";
