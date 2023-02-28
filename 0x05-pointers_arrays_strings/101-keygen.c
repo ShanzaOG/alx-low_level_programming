@@ -26,7 +26,7 @@ void PasswordGen(int n)
 
 	random = rand() % 4;
 
-	for (i = 0; i < a; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (random == 1)
 		{
