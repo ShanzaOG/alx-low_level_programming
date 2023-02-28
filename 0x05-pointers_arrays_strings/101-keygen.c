@@ -15,7 +15,6 @@ void PasswordGen(int n)
 	int i = 0;
 	char *pswd;
 	pswd = (char*) malloc(sizeof(char) * n);
-	free (pswd);
 	int random = 0;
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
@@ -24,6 +23,7 @@ void PasswordGen(int n)
 
 	srand((unsigned int)(time(NULL)));
 
+	free (pswd);
 	random = rand() % 4;
 
 	for (i = 0; i < n; i++)
