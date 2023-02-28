@@ -13,8 +13,9 @@
 void PasswordGen(int n)
 {
 	int i = 0;
+	const int a = n
 	int random = 0;
-	char pswd[n];
+	char pswd[a];
 	char numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
@@ -24,7 +25,7 @@ void PasswordGen(int n)
 
 	random = rand() % 4;
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < a; i++)
 	{
 		if (random == 1)
 		{
