@@ -1,4 +1,3 @@
-#inlude "main.h"
 int check_seperators(char c);
 
 /**
