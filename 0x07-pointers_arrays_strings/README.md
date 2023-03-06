@@ -1,0 +1,1 @@
+Pointer arrays with Strings
