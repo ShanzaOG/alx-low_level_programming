@@ -1,6 +1,6 @@
 #inlude "main.h"
 /**
- * _strpbrk - locates first occurrence 
+ * _strpbrk - locates first occurrence
  * @s: pointer to char
  * @accept: pointer to char
  * Description: finds first occurencein string s of bytes in accept
