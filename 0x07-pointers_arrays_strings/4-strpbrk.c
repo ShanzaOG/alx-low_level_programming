@@ -1,4 +1,4 @@
-#inlude "main.h"
+#include "main.h"
 /**
  * _strpbrk - locates first occurrence
  * @s: pointer to char
