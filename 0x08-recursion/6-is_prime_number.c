@@ -14,7 +14,7 @@ int is_prime_number1(int n, int i)
 		return (0);
 	if (i * i > n)
 		return (1);
-	return (is_prime_number(n, i + 1));
+	return (is_prime_number1(n, i + 1));
 }
 
 /**
