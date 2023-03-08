@@ -1,4 +1,20 @@
 #include "main.h"
+/**
+ * _sqrt_helper - helper function
+ * @prev: prev value
+ * @root: sqrt value
+ * Description: searches if mid value is square root of n
+ * Return: int
+ */
+int _sqrt_helper(int prev, int root)
+{
+	if (prev > root)
+		return (-1);
+	if (prev * prev == n)
+		return (prev);
+	else
+		return (_sqrt_helper(prev + 1, root));
+}
 
 /**
  * _sqrt_recursion - check description
@@ -8,21 +24,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	int low = 1;
-	int high = n;
-	int mid;
-
-	if (n == 0 || n == 1)
-		return (n);
-	while (low <= high)
-	{
-		mid = (low + high) / 2;
-		if (mid * mid == n)
-			return (mid);
-		else if (mid * mid < n)
-			low = mid + 1;
-		else
-			high = mid - 1;
-	}
-	return (-1);
+	if (n < 0)
+		return (-1);
+	return (_sqrt_helper(1,n));
 }
