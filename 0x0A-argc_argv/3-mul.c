@@ -18,10 +18,9 @@ int main(int argc, char *argv[])
 	else
 	{
 		higher = atoi(argv[1]);
-		lower = atoi(argv[0]);
+		lower = atoi(argv[2]);
 		result = higher * lower;
 		printf("%d\n", result);
+		return (0);
 	}
-
-	return (0);
 }
