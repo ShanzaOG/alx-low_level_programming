@@ -5,7 +5,7 @@
  * @argv: array of strings to the arguments
  * Return: 0 successful
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	if (argc > 0)
 		printf("%s\n", argv[0]);
