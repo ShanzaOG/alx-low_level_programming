@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 {
 	int amount, coins = 0;
 
-	if (arg == 2)
+	if (argc == 2)
 	{
 		amount = atoi(argv[1]);
 		if (amount < 0)
