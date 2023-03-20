@@ -5,7 +5,6 @@
  * @name: pointer to char
  * @age: pointer to float
  * @owner: pointer to char
- *
  * Description: takes three attributes name, age, owner
  */
 struct dog
@@ -14,3 +13,4 @@ struct dog
 	float age;
 	char *owner;
 };
+#endif
