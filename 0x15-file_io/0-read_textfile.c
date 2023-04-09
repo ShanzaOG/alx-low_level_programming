@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * read_textfile - A function that reads the contents of a file and prints to std ouput.
+ * read_textfile - reads the contents of a file and prints to std ouput.
  * @filename: pointer to constant character; filename
  * @letters: numbers of letters printed
- * Returns: numbers of letters printed
+ * Return: numbers of letters printed
  */
- ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int f;
 	char *buffer;
