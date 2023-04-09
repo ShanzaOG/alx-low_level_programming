@@ -42,17 +42,17 @@ int main(int argc, char *argv[])
 
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
-	error_file(file_from, file_tox, argv);
+	check_file(file_from, file_to, argv);
 
 	ncharx = 1024;
 	while (ncharx == 1024)
 	{
 		ncharx = read(file_from, buf, 1024);
 		if (ncharx == -1)
-			error_file(-1, 0, argv);
+			check_file(-1, 0, argv);
 		wr = write(file_to, buf, ncharx);
 		if (wr == -1)
-			error_file(0, -1, argv);
+			check_file(0, -1, argv);
 	}
 	err_close = close(file_from);
 	if (err_close == -1)
